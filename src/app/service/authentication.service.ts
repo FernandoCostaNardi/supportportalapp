@@ -63,7 +63,7 @@ export class AuthenticationService {
     return null;
   }
 
-  public isLoggedIn(): boolean {
+  public isUserLoggedIn(): boolean {
     this.loadToken();
     if (!this.token) {
       this.logOut();
